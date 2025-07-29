@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>All Employees</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="employee-form.html">Add Employee</a>
+    </nav>
+  </header>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Employee rows will be populated dynamically -->
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>
+            <a href="employee-form.html?id=1">Edit</a>
+            |
+            <a href="#">Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button>&laquo; Prev</button>
+      <span>Page 1 of 3</span>
+      <button>Next &raquo;</button>
+    </div>
+  </div>
+</body>
+</html>
